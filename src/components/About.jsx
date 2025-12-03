@@ -12,15 +12,9 @@ export default function About() {
           <div>
             <p className="text-slate-400 mb-4">
               Hello! I’m <span className="font-semibold text-slate-200">Nishok Kumar</span>, 
-              a passionate and driven SOC Analyst with a deep curiosity for how systems operate and how to secure them. 
-              My journey started in web development, where I worked with React and PHP. However, my growing interest in security 
-              led me to transition into Security Operations (SOC), where I could apply my problem-solving skills to protect systems and data.
-            </p>
-
-            <p className="text-slate-400 mb-4">
-              I gained hands-on experience through an internship at NullClass, where I worked in Security Operations 
-              and honed my skills in incident handling, detection engineering, and threat hunting. 
-              Additionally, I earned a certification from Selfmade Ninja Academy (SNA), which solidified my expertise in cybersecurity.
+              a passionate SOC Analyst with a background in web development (React, PHP) and a growing focus on cybersecurity. 
+              After transitioning into Security Operations, I gained hands-on experience at NullClass in incident handling, 
+              detection engineering, and threat hunting. I also earned a certification from Selfmade Ninja Academy (SNA).
             </p>
 
             <p className="text-slate-400 mb-4">
@@ -29,9 +23,8 @@ export default function About() {
             </p>
 
             <p className="text-slate-400 mb-6">
-              I’m focused on building robust detection rules, investigating security incidents, and strengthening defenses 
-              to proactively mitigate threats. I’m always eager to learn and grow in this ever-evolving field, 
-              and I’m excited to contribute my skills to a dynamic, collaborative team.
+              Currently, I focus on building detection rules, investigating incidents, and strengthening defenses 
+              to proactively mitigate threats. I’m eager to continue growing in this field and contribute to a dynamic security team.
             </p>
 
             {/* Skills Section */}

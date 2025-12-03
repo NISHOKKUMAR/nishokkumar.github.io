@@ -15,12 +15,11 @@ export default function Hero(){
       I protect systems.
     </h2>
     <p className="text-slate-400 leading-relaxed mb-6">
-      Driven and aspiring SOC Analyst with hands-on experience in Incident Handling, Detection Engineering, and Threat Hunting, 
-      developed through both self-driven projects and online labs. Proficient in SIEM tools such as Splunk, ELK Stack, 
-      and Wazuh (EDR), with a solid foundation in blue team operations. Strong knowledge of Linux, Windows, and Network Security, 
-      combined with programming expertise in C/C++, PHP, and scripting languages like Python, Bash, and PowerShell.
-      Eager to contribute to a collaborative SOC environment, leverage problem-solving skills, grow professionally, and 
-      drive team and organizational success through proactive security solutions and innovative ideas.
+      Aspiring SOC Analyst with hands-on experience in Incident Handling, Detection Engineering, and Threat Hunting, 
+      gained through self-driven projects and labs. Proficient in SIEM tools (Splunk, ELK, Wazuh), 
+      with strong knowledge of Linux, Windows, and Network Security. Skilled in C/C++, PHP, and 
+      scripting languages like Python, Bash, and PowerShell. Eager to contribute to a collaborative SOC team, 
+      apply problem-solving skills, and drive security improvements.
     </p>
     <div className="flex gap-4">
       <a

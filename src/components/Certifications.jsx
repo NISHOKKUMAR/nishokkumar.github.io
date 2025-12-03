@@ -49,96 +49,77 @@ const certificates = [
 ];
 
 export default function CertificatesSection() {
-  const [activeSub, setActiveSub] = React.useState(null); // NEW: controls dynamic content
+  const [index, setIndex] = useState(0);
+
+  const next = () =>
+    setIndex((prev) => (prev + 1) % certificates.length);
+
+  const prev = () =>
+    setIndex((prev) =>
+      prev === 0 ? certificates.length - 1 : prev - 1
+    );
+
+  const cert = certificates[index];
 
   return (
     <section id="certs" className="py-24">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-sea font-mono text-lg mb-12">03. Certifications</h2>
+      <div className="max-w-6xl mx-auto px-6">
+        <h2 className="text-sea font-mono text-lg mb-12">
+          03. Certifications
+        </h2>
 
-        <div className="space-y-24">
-          {certificates.map((cert, index) => {
-            // Detect if the current cert has subCerts
-            const isMultiCert = cert.subCerts && cert.subCerts.length > 0;
+        <div className="flex flex-col md:flex-row items-center gap-12">
 
-            // Determine displayed text (dynamic for SNA)
-            const displayedContent =
-              isMultiCert && activeSub
-                ? activeSub
-                : cert;
+          {/* LEFT CONTENT */}
+          <div className="md:w-1/2">
+            <h3 className="text-3xl font-bold text-slate-200 mb-4">
+              {cert.name}
+            </h3>
 
-            return (
-              <div
-                key={index}
-                className={`flex flex-col md:flex-row items-center gap-12 ${
-                  index % 2 === 1 ? "md:flex-row-reverse" : ""
-                }`}
-              >
-                {/* ===========================
-                    IMAGE SECTION
-                ============================ */}
-                <div className="md:w-1/2 relative group h-[350px]">
+            <p className="text-slate-400 mb-6">
+              {cert.description}
+            </p>
 
-                  {/* Case 1: Simple certificate */}
-                  {!isMultiCert && (
-                    <>
-                      <img
-                        src={cert.img}
-                        alt={cert.name}
-                        className="rounded-lg shadow-lg object-cover w-full h-full group-hover:scale-[1.02] transition"
-                      />
-                      <div className="absolute inset-0 bg-slate-900/30 rounded-lg opacity-0 group-hover:opacity-100 transition" />
-                    </>
-                  )}
+            <ul className="flex flex-wrap gap-3 text-sm font-mono text-sea">
+              {cert.keywords.map((kw, i) => (
+                <li
+                  key={i}
+                  className="bg-slate-800 px-3 py-1 rounded-lg border border-slate-700"
+                >
+                  {kw}
+                </li>
+              ))}
+            </ul>
+          </div>
 
-                  {/* Case 2: Multi-cert (LAHTP) */}
-                  {isMultiCert && (
-                    <div className="grid grid-cols-3 gap-3 h-full">
-                      {cert.subCerts.map((sub, i) => (
-                        <div
-                          key={i}
-                          className="relative group cursor-pointer"
-                          onClick={() => setActiveSub(sub)} // update right side
-                        >
-                          <img
-                            src={sub.img}
-                            alt={sub.label}
-                            className="rounded-lg object-cover h-full w-full"
-                          />
+          {/* RIGHT CERTIFICATE IMAGE + NAV */}
+          <div className="md:w-1/2 relative flex items-center justify-center">
 
-                          <div className="absolute inset-0 flex items-center justify-center bg-black/60 opacity-0 group-hover:opacity-100 transition text-white text-xs font-mono text-center p-2">
-                            {sub.label}
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                </div>
+            {/* LEFT ARROW */}
+            <button
+              onClick={prev}
+              className="absolute left-0 text-sea text-3xl hover:text-white transition"
+            >
+              ◀
+            </button>
 
-                {/* ===========================
-                    TEXT SECTION (Dynamic for SNA)
-                ============================ */}
-                <div className="md:w-1/2">
-                  <h3 className="text-2xl font-bold text-slate-200 mb-4">
-                    {isMultiCert && activeSub ? activeSub.label : cert.name}
-                  </h3>
+            {/* IMAGE */}
+            <div className="w-[380px] h-[500px] rounded-xl overflow-hidden shadow-xl border border-slate-700 bg-slate-900">
+              <img
+                src={cert.img}
+                alt={cert.name}
+                className="w-full h-full object-cover transition-all duration-300"
+              />
+            </div>
 
-                  <p className="text-slate-400 mb-6">{displayedContent.description}</p>
-
-                  <ul className="flex flex-wrap gap-3 text-sm font-mono text-sea">
-                    {displayedContent.keywords.map((kw, i) => (
-                      <li
-                        key={i}
-                        className="bg-slate-800 px-3 py-1 rounded-lg border border-slate-700"
-                      >
-                        {kw}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            );
-          })}
+            {/* RIGHT ARROW */}
+            <button
+              onClick={next}
+              className="absolute right-0 text-sea text-3xl hover:text-white transition"
+            >
+              ▶
+            </button>
+          </div>
         </div>
       </div>
     </section>
