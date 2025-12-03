@@ -15,11 +15,12 @@ export default function Hero(){
       I protect systems.
     </h2>
     <p className="text-slate-400 leading-relaxed mb-6">
-      I’m a SOC Analyst with hands-on experience in Elastic SIEM, forensic
-      analysis and low-level programming. I monitor security events and derive
-      the story from them. Curious and a fast learner — started with web
-      development (React, PHP), now focused on defending systems and building
-      detection capability.
+      Driven and aspiring SOC Analyst with hands-on experience in Incident Handling, Detection Engineering, and Threat Hunting, 
+      developed through both self-driven projects and online labs. Proficient in SIEM tools such as Splunk, ELK Stack, 
+      and Wazuh (EDR), with a solid foundation in blue team operations. Strong knowledge of Linux, Windows, and Network Security, 
+      combined with programming expertise in C/C++, PHP, and scripting languages like Python, Bash, and PowerShell.
+      Eager to contribute to a collaborative SOC environment, leverage problem-solving skills, grow professionally, and 
+      drive team and organizational success through proactive security solutions and innovative ideas.
     </p>
     <div className="flex gap-4">
       <a

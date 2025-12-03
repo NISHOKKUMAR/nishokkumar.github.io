@@ -3,29 +3,43 @@ import React from 'react';
 const projects = [
   {
     title: 'Hands-on Elastic SIEM',
-    timeframe: '2024 - Present',
+    timeframe: '2025 JUNE ',
     bullets: [
-      'Configured and deployed Elastic SIEM (ELK) with Winlogbeat on Windows endpoints.',
-      'Implemented secure log ingestion (SSL/TLS) and tuned correlation rules for detection.',
-      'Tracked attack techniques mapped to MITRE ATT&CK.',
+      'Configured and deployed Elastic SIEM (ELK stack) with Winlogbeat on Windows endpoints, enabling centralized logging and real-time monitoring of security events.',
+      'Implemented secure log ingestion using SSL/TLS encryption to ensure confidentiality and integrity of log data during transmission.',
+      'Tuned and optimized correlation rules based on threat intelligence feeds and use case requirements to improve detection accuracy.',
+      'Developed detection rules aligned with MITRE ATT&CK framework, focusing on detecting known attack techniques such as brute force, data exfiltration, and unauthorized login attempts.',
+      'Created custom Kibana dashboards to visualize key security metrics, such as brute force attempts, data exfiltration patterns, and authentication/login activity, improving situational awareness for security teams.',
     ],
   },
   {
     title: 'PCAP Incident Analysis',
-    timeframe: '2025',
+    timeframe: '2025 JULY',
     bullets: [
-      'Analyzed phishing email incident using Wireshark to discover data exfiltration.',
-      'Enriched IOCs and produced blue-team incident report aligning with SANS guides.',
+      'Conducted a detailed analysis of a phishing email incident by captured PCAP File, analyzed network traffic using Wireshark, uncovering evidence of data exfiltration over HTTP/HTTPS protocols.',
+      'Enriched Indicators of Compromise (IOCs) such as IP addresses, domains, and file hashes, then compiled a comprehensive blue-team incident report following industry best practices outlined by SANS.',
+      'Used network traffic analysis to identify command and control (C2) communication patterns, helping to map out the attack timeline and scope.',
     ],
   },
   {
     title: 'Windows Keylogger (C++)',
-    timeframe: '2025',
+    timeframe: '2024 NOVEMBER',
     bullets: [
-      'Built keylogger using API hooking techniques with obfuscation for testing & research.',
-      'Developed multi-threaded, synchronized logging to local storage for analysis purposes.',
-      'Implemented secure log ingestion (SSL/TLS) and tuned correlation rules for detection.',
-      'Tracked attack techniques mapped to MITRE ATT&CK.',
+      'Developed a keylogger application using low-level API hooking techniques in C++, allowing for the interception by API Hooking.',
+      'Implemented multi-threaded, synchronized logging of keystrokes, enabling secure and efficient storage of data locally for further analysis.',
+      'Integrated features to record key presses along with associated window names (Active Window) and timestamps, providing context for each action, making it valuable for security investigations.',
+      'Applied obfuscation techniques to prevent detection by basic antivirus software and make the keylogger more stealthy in a real-world attack scenario.',
+    ],
+  },
+  {
+    title: 'Security Tools',
+    timeframe: '2024 NOVEMBER',
+    bullets: [
+      'Designed and developed a custom network scanning tool similar to Nmap, enabling users to discover devices, open ports, and services on a network to assess security posture.',
+      'Built a Mini Intrusion Detection System (IDS) to detect suspicious network traffic patterns and potential intrusions, providing real-time alerts on anomalous activities.',
+      'Developed a Privilege Escalation Detection Tool to help identify common vectors for privilege escalation attacks, such as misconfigured permissions and vulnerable services.',
+      'Created a real-time chat application using sockets to enhance understanding of networking protocols and real-time data transfers.',
+      'Ensured each tool was modular and flexible, allowing for future updates and integration with larger security frameworks.',
     ],
   },
 ];

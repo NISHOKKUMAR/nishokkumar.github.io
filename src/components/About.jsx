@@ -12,38 +12,43 @@ export default function About() {
           <div>
             <p className="text-slate-400 mb-4">
               Hello! I’m <span className="font-semibold text-slate-200">Nishok Kumar</span>, 
-              a curious person who loves learning how systems work and how to secure them. 
-              I transitioned from React & PHP web development into Security Operations.
+              a passionate and driven SOC Analyst with a deep curiosity for how systems operate and how to secure them. 
+              My journey started in web development, where I worked with React and PHP. However, my growing interest in security 
+              led me to transition into Security Operations (SOC), where I could apply my problem-solving skills to protect systems and data.
             </p>
 
             <p className="text-slate-400 mb-4">
-              I completed an internship at <span className="font-semibold">NullClass</span> in SOC 
-              and earned a certification from 
-              <span className="font-semibold"> Selfmade Ninja Academy (SNA)</span>. 
-              I completed B.E at SRM Valliammai Engineering College (2024) and 
-              M.E at Panimalar Engineering College (2026).
+              I gained hands-on experience through an internship at NullClass, where I worked in Security Operations 
+              and honed my skills in incident handling, detection engineering, and threat hunting. 
+              Additionally, I earned a certification from Selfmade Ninja Academy (SNA), which solidified my expertise in cybersecurity.
+            </p>
+
+            <p className="text-slate-400 mb-4">
+              I hold a B.E. in Computer Science from SRM Valliammai Engineering College (2020–2024) and 
+              have completed my M.E. in Computer Science at Panimalar Engineering College (2024–2026).
             </p>
 
             <p className="text-slate-400 mb-6">
-              My current focus is building detection rules, analyzing incidents, and 
-              strengthening defenses as a SOC Analyst.
+              I’m focused on building robust detection rules, investigating security incidents, and strengthening defenses 
+              to proactively mitigate threats. I’m always eager to learn and grow in this ever-evolving field, 
+              and I’m excited to contribute my skills to a dynamic, collaborative team.
             </p>
 
             {/* Skills Section */}
             <div className="grid grid-cols-2 gap-x-12 mt-6 text-slate-400 font-mono text-sm">
               <ul className="space-y-2">
-                <li className="flex items-center"><span className="text-sea mr-2">▹</span> ElasticSearch (SIEM)</li>
-                <li className="flex items-center"><span className="text-sea mr-2">▹</span> Linux (Ubuntu & RedHat)</li>
-                <li className="flex items-center"><span className="text-sea mr-2">▹</span> YARA</li>
-                <li className="flex items-center"><span className="text-sea mr-2">▹</span> C / C++</li>
-                <li className="flex items-center"><span className="text-sea mr-2">▹</span> Bash</li>
+                <li className="flex items-center"><span className="text-sea mr-2">▹</span> Elastic SIEM & Splunk</li>
+                <li className="flex items-center"><span className="text-sea mr-2">▹</span> Wazuh</li>
+                <li className="flex items-center"><span className="text-sea mr-2">▹</span> Incident Investigation</li>
+                <li className="flex items-center"><span className="text-sea mr-2">▹</span> Windows & Linux Internals</li>
+                <li className="flex items-center"><span className="text-sea mr-2">▹</span> Network Fundamentals</li>
               </ul>
               <ul className="space-y-2">
                 <li className="flex items-center"><span className="text-sea mr-2">▹</span> MITRE ATT&CK Framework</li>
-                <li className="flex items-center"><span className="text-sea mr-2">▹</span> Networks</li>
-                <li className="flex items-center"><span className="text-sea mr-2">▹</span> The Sleuth Kit</li>
-                <li className="flex items-center"><span className="text-sea mr-2">▹</span> Python</li>
-                <li className="flex items-center"><span className="text-sea mr-2">▹</span> PHP</li>
+                <li className="flex items-center"><span className="text-sea mr-2">▹</span> Malware Analysis</li>
+                <li className="flex items-center"><span className="text-sea mr-2">▹</span> YARA | Sigma Rule Building</li>
+                <li className="flex items-center"><span className="text-sea mr-2">▹</span> C/C++, PHP, Python</li>
+                <li className="flex items-center"><span className="text-sea mr-2">▹</span> Powershell, Bash</li>
               </ul>
             </div>
           </div>
