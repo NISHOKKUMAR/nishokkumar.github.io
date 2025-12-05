@@ -49,11 +49,11 @@ export default function About() {
           {/* Right Side - Image */}
           <div className="flex justify-center">
             <div className="relative">
-              <img
-                src="placeholder.png"   // replace with your photo later
+              {/*<img
+                src="certs/placeholder.png"   // replace with your photo later
                 alt="Nishok Kumar"
                 className="rounded-lg relative z-10 w-full max-w-[400px] mx-auto"
-              />
+              />*/}
               <div className="absolute top-3 left-3 w-full h-full border-2 border-sea rounded-lg -z-0"></div>
             </div>
           </div>

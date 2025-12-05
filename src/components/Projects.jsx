@@ -5,41 +5,46 @@ const projects = [
     title: 'Hands-on Elastic SIEM',
     timeframe: '2025 JUNE ',
     bullets: [
-      'Configured and deployed Elastic SIEM (ELK stack) with Winlogbeat on Windows endpoints, enabling centralized logging and real-time monitoring of security events.',
-      'Implemented secure log ingestion using SSL/TLS encryption to ensure confidentiality and integrity of log data during transmission.',
-      'Tuned and optimized correlation rules based on threat intelligence feeds and use case requirements to improve detection accuracy.',
-      'Developed detection rules aligned with MITRE ATT&CK framework, focusing on detecting known attack techniques such as brute force, data exfiltration, and unauthorized login attempts.',
-      'Created custom Kibana dashboards to visualize key security metrics, such as brute force attempts, data exfiltration patterns, and authentication/login activity, improving situational awareness for security teams.',
+      'Configured and deployed Elastic SIEM (ELK stack) with Winlogbeat on Windows endpoints for centralized logging.',
+      'Enabled real-time monitoring of security events across endpoints with Elastic SIEM.',
+      'Implemented secure log ingestion using SSL/TLS encryption for data confidentiality and integrity.',
+      'Tuned and optimized correlation rules based on threat intelligence feeds and use case needs.',
+      'Developed detection rules aligned with the MITRE ATT&CK framework to identify attack techniques.',
+      'Focused on detecting attacks such as brute force, data exfiltration, and unauthorized logins.',
+      'Created custom Kibana dashboards to visualize key security metrics, enhancing situational awareness.'
     ],
   },
   {
     title: 'PCAP Incident Analysis',
     timeframe: '2025 JULY',
     bullets: [
-      'Conducted a detailed analysis of a phishing email incident by captured PCAP File, analyzed network traffic using Wireshark, uncovering evidence of data exfiltration over HTTP/HTTPS protocols.',
-      'Enriched Indicators of Compromise (IOCs) such as IP addresses, domains, and file hashes, then compiled a comprehensive blue-team incident report following industry best practices outlined by SANS.',
-      'Used network traffic analysis to identify command and control (C2) communication patterns, helping to map out the attack timeline and scope.',
+      'Conducted a detailed analysis of a phishing email incident using a captured PCAP file.',
+      'Examined network traffic in Wireshark and identified signs of data exfiltration over SMTP.',
+      'Enriched key IOCs, including IP addresses, domains, and file hashes.',
+      'Compiled a comprehensive blue‑team incident report following SANS best practices.',
+      'Identified C2 communication patterns to map the attack timeline and overall scope.'
     ],
   },
   {
     title: 'Windows Keylogger (C++)',
     timeframe: '2024 NOVEMBER',
     bullets: [
-      'Developed a keylogger application using low-level API hooking techniques in C++, allowing for the interception by API Hooking.',
-      'Implemented multi-threaded, synchronized logging of keystrokes, enabling secure and efficient storage of data locally for further analysis.',
-      'Integrated features to record key presses along with associated window names (Active Window) and timestamps, providing context for each action, making it valuable for security investigations.',
-      'Applied obfuscation techniques to prevent detection by basic antivirus software and make the keylogger more stealthy in a real-world attack scenario.',
+      'Developed a keylogger in C++ using low‑level API hooking to intercept keyboard inputs.',
+      'Implemented multi‑threaded, synchronized keystroke logging for secure and efficient data storage.',
+      'Captured keystrokes with active window names and timestamps to provide target activity context.',
+      'Applied obfuscation techniques to reduce detection by basic antivirus tools.',
+      
     ],
   },
   {
     title: 'Security Tools',
     timeframe: '2024 NOVEMBER',
     bullets: [
-      'Designed and developed a custom network scanning tool similar to Nmap, enabling users to discover devices, open ports, and services on a network to assess security posture.',
-      'Built a Mini Intrusion Detection System (IDS) to detect suspicious network traffic patterns and potential intrusions, providing real-time alerts on anomalous activities.',
-      'Developed a Privilege Escalation Detection Tool to help identify common vectors for privilege escalation attacks, such as misconfigured permissions and vulnerable services.',
-      'Created a real-time chat application using sockets to enhance understanding of networking protocols and real-time data transfers.',
-      'Ensured each tool was modular and flexible, allowing for future updates and integration with larger security frameworks.',
+      'Designed a custom Nmap‑style network scanner to identify devices, open ports, and services for security assessment.',
+      'Built a mini IDS to detect suspicious traffic patterns and provide real‑time intrusion alerts.',
+      'Developed a privilege‑escalation detection tool to identify misconfigurations and vulnerable services.',
+      'Created a real‑time socket‑based chat application to strengthen understanding of networking protocols.',
+      'Designed all tools to be modular and flexible for future updates and integration into larger security frameworks.'
     ],
   },
 ];
